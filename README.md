@@ -3,8 +3,9 @@ PS3DumpChecker
 
 A PS3 NOR/NAND Dump Checker/Verifier
 
-NOTE: Nobody takes ANY responsibility for any false negative/false positive given by this app, the responsibilty that your dump is valid is YOURS and yours alone...
-this tool should be treated as an easy way to make a quick check to see if it's at all worth looking closer at, to really verify your dump read the latest information here:
+ПРИМЕЧАНИЕ: Никто не несет никакой ответственности за ложные/отрицательные срабатывания этого приложения. Ответственность за то, что ваш дамп действителен, лежит на ВАС и только на Вас...
+Этот инструмент следует рассматривать, как простой способ быстрой проверки, а стоит ли вообще к нему присматриваться, чтобы действительно проверить свой дамп, прочтите последнюю информацию здесь:
 
 http://www.psdevwiki.com/ps3/Validating_flash_dumps
-You may use this tool any way you like, you may also use the code on this repo any way you like
+
+Вы можете использовать этот инструмент как хотите, вы также можете использовать код в этом репо так, как вам нравится.
