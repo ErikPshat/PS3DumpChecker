@@ -1,4 +1,7 @@
 @echo off
+if not exist "Latest Compiled Version" md "Latest Compiled Version"
+copy PS3DumpChecker.exe "Latest Compiled Version" > nul
+copy changelog "Latest Compiled Version" > nul
 if not exist "%1" goto notok
 cd "%1"
 goto ok
