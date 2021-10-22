@@ -26,7 +26,7 @@
             Common.StatusUpdate += StatusUpdate;
             Common.ListUpdate += CommonOnListUpdate;
             var app = Assembly.GetExecutingAssembly();
-            _version = string.Format("PS3 Dump Checker v{0}.{1} (Build: {2})", app.GetName().Version.Major, app.GetName().Version.Minor, app.GetName().Version.Build);
+            _version = string.Format("PS3 Dump Checker v{0}.{1} Build: {2} Revision: {3} RUS", app.GetName().Version.Major, app.GetName().Version.Minor, app.GetName().Version.Build, app.GetName().Version.Revision);
             Text = _version;
             Icon = Program.AppIcon;
             actdatabox.Font = new Font(FontFamily.GenericMonospace, actdatabox.Font.Size);
