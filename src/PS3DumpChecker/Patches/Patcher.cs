@@ -96,14 +96,14 @@
                         var patchdata = GetRosPatchData("Patches.patch.bin", swap);
                         switch(src.BaseStream.Length) {
                             case 0x1000000L:
-                                Common.SendStatus("Applying ROS patch 1 of 2");
+                                Common.SendStatus("Применение ROS патча 1 из 2");
                                 ApplyPatch(0xC0010, ref patchdata, target);
-                                Common.SendStatus("Applying ROS patch 2 of 2");
+                                Common.SendStatus("Применение ROS патча 2 из 2");
                                 ApplyPatch(0x7C0010, ref patchdata, target);
 
                                 if (Program.GetRegSetting("trvkpatches"))
                                 {
-                                    Common.SendStatus("Applying TRVK patchs");
+                                    Common.SendStatus("Применение TRVK патчей");
                                     patchdata = GetPatchData("Patches.nor_rvk.bin", swap);
                                     ApplyPatch(0x40000, ref patchdata, target);
                                 }
@@ -111,22 +111,22 @@
                                 if (Program.GetRegSetting("forcepatch") && Program.GetRegSetting("rosheaders"))
                                 {
                                     patchdata = GetPatchData("Patches.ros_head.bin", swap);
-                                    Common.SendStatus("Restoring ROS Header 1 of 2");
+                                    Common.SendStatus("Восстановление ROS заголовка 1 из 2");
                                     ApplyPatch(0xC0000, ref patchdata, target);
-                                    Common.SendStatus("Restoring ROS Header 2 of 2");
+                                    Common.SendStatus("Восстановление ROS заголовка 2 из 2");
                                     ApplyPatch(0x7C0000, ref patchdata, target);
                                 }
 
                                 break;
                             case 0x10000000L:
-                                Common.SendStatus("Applying ROS patch 1 of 2");
+                                Common.SendStatus("Применение ROS патча 1 из 2");
                                 ApplyPatch(0xC0030, ref patchdata, target);
-                                Common.SendStatus("Applying ROS patch 2 of 2");
+                                Common.SendStatus("Применение ROS патча 2 из 2");
                                 ApplyPatch(0x7C0020, ref patchdata, target);
 
                                 if (Program.GetRegSetting("trvkpatches"))
                                 {
-                                    Common.SendStatus("Applying TRVK patchs");
+                                    Common.SendStatus("Применение TRVK патчей");
                                     patchdata = GetPatchData("Patches.nand_rvk.bin", swap);
                                     ApplyPatch(0x91800, ref patchdata, target);
                                 }
@@ -134,9 +134,9 @@
                                 if (Program.GetRegSetting("forcepatch") && Program.GetRegSetting("rosheaders"))
                                 {
                                     patchdata = GetPatchData("Patches.ros_head.bin", swap);
-                                    Common.SendStatus("Restoring ROS Header 1 of 2");
+                                    Common.SendStatus("Восстановление ROS заголовка 1 из 2");
                                     ApplyPatch(0xC0020, ref patchdata, target);
-                                    Common.SendStatus("Restoring ROS Header 2 of 2");
+                                    Common.SendStatus("Восстановление ROS заголовка 2 из 2");
                                     ApplyPatch(0x7C0010, ref patchdata, target);
                                 }
 
@@ -146,9 +146,9 @@
                         }
                     }
                 }
-                Common.SendStatus(string.Format("All patches applied to {0}", destFileName));
+                Common.SendStatus(string.Format("Все патчи применены к {0}", destFileName));
                 if (!Program.GetRegSetting("autoexit"))
-                    MessageBox.Show(string.Format("All patches applied to {0}", destFileName), "Patching completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(string.Format("Все патчи применены к {0}", destFileName), "Пропатчивание завершено", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch(FileNotFoundException ex) {
                 MessageBox.Show(string.Format(Resources.PatchFailedCantFindPatchFile, filename, ex.Message), Resources.error, MessageBoxButtons.OK, MessageBoxIcon.Error);

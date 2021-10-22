@@ -46,7 +46,7 @@
 
         private void BWDoWork(object sender, DoWorkEventArgs e) {
             try {
-                var url = GetFinalUrl("https://github.com/Swizzy/PS3DumpChecker/raw/master/Latest%20Compiled%20Version/changelog");
+                var url = GetFinalUrl("https://github.com/ErikPshat/PS3DumpChecker/raw/master/Latest%20Compiled%20Version/changelog");
                 var wc = new WebClient();
                 if(string.IsNullOrEmpty(url)) {
                     MessageBox.Show(Resources.ErrorDownloadingChangelog, Resources.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -54,12 +54,12 @@
                 }
                 e.Result = wc.DownloadString(url);
                 if(string.IsNullOrEmpty(e.Result as string))
-                    e.Result = "Oh noes! There is no changelog for you :'(";
+                    e.Result = "О нет! Для вас нет журнала изменений :'(";
             }
             catch(WebException ex) {
                 var code = ((HttpWebResponse) ex.Response).StatusCode;
                 if(code == HttpStatusCode.NoContent || code == HttpStatusCode.NotFound)
-                    e.Result = "Oh noes! There is no changelog for you :'(";
+                    e.Result = "О нет! Для вас нет журнала изменений :'(";
                 else
                     throw;
             }
@@ -154,7 +154,7 @@
                     throw new ArgumentNullException(Resources.NoFile, new Exception(Resources.NoFile));
                 var hfile = file.Equals("latest.exe", StringComparison.CurrentCultureIgnoreCase) ? "PS3DumpChecker.exe" : string.Format("default{0}", file.Substring(file.LastIndexOf('.')));
                 var wc = new WebClient();
-                var url = GetFinalUrl(string.Format("{0}/{1}?raw=true", "https://github.com/Swizzy/PS3DumpChecker/raw/master/Latest%20Compiled%20Version", hfile));
+                var url = GetFinalUrl(string.Format("{0}/{1}?raw=true", "https://github.com/ErikPshat/PS3DumpChecker/raw/master/Latest%20Compiled%20Version", hfile));
                 if(string.IsNullOrEmpty(url))
                     return;
                 wc.DownloadFile(url, file);
@@ -177,7 +177,7 @@
                 var wc = new WebClient();
                 if(string.IsNullOrEmpty(hfile))
                     hfile = file.Equals("latest.exe", StringComparison.CurrentCultureIgnoreCase) ? "PS3DumpChecker.exe" : string.Format("default{0}", file.Substring(file.LastIndexOf('.')));
-                var url = GetFinalUrl(string.Format("{0}/{1}.md5", "https://github.com/Swizzy/PS3DumpChecker/raw/master/Latest%20Compiled%20Version", hfile));
+                var url = GetFinalUrl(string.Format("{0}/{1}.md5", "https://github.com/ErikPshat/PS3DumpChecker/raw/master/Latest%20Compiled%20Version", hfile));
                 if(string.IsNullOrEmpty(url)) {
                     MessageBox.Show(Resources.ErrorDownloadingUpdate, Resources.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
@@ -232,7 +232,7 @@
         private void AppbtnClick(object sender, EventArgs e) {
             try {
                 var wc = new WebClient();
-                var url = GetFinalUrl("https://github.com/Swizzy/PS3DumpChecker/raw/master/Latest%20Compiled%20Version/PS3DumpChecker.exe.version");
+                var url = GetFinalUrl("https://github.com/ErikPshat/PS3DumpChecker/raw/master/Latest%20Compiled%20Version/PS3DumpChecker.exe.version");
                 if(string.IsNullOrEmpty(url)) {
                     MessageBox.Show(Resources.ErrorWhileCheckingForUpdates, Resources.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

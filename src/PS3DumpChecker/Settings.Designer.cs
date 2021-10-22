@@ -64,8 +64,8 @@
             this.autopatch.Name = "autopatch";
             this.autopatch.Size = new System.Drawing.Size(113, 17);
             this.autopatch.TabIndex = 0;
-            this.autopatch.Text = "Enable auto patch";
-            this.toolTip1.SetToolTip(this.autopatch, "Patch the image once verified, if Ok and not already patched.");
+            this.autopatch.Text = "Включить автопатчинг";
+            this.toolTip1.SetToolTip(this.autopatch, "Патчить дамп после проверки, если всё ОК и еще не пропатчен.");
             this.autopatch.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -76,7 +76,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(369, 35);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Save";
+            this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1Click);
             // 
@@ -87,7 +87,7 @@
             this.autoexit.Name = "autoexit";
             this.autoexit.Size = new System.Drawing.Size(156, 17);
             this.autoexit.TabIndex = 0;
-            this.autoexit.Text = "Enable auto exit after patch";
+            this.autoexit.Text = "Автовыход после патча";
             this.autoexit.UseVisualStyleBackColor = true;
             // 
             // dohashcheck
@@ -97,7 +97,7 @@
             this.dohashcheck.Name = "dohashcheck";
             this.dohashcheck.Size = new System.Drawing.Size(123, 17);
             this.dohashcheck.TabIndex = 0;
-            this.dohashcheck.Text = "Enable hash checks";
+            this.dohashcheck.Text = "Проверять на хэши";
             this.dohashcheck.UseVisualStyleBackColor = true;
             // 
             // AutoDLcfg
@@ -107,7 +107,7 @@
             this.AutoDLcfg.Name = "AutoDLcfg";
             this.AutoDLcfg.Size = new System.Drawing.Size(150, 17);
             this.AutoDLcfg.TabIndex = 0;
-            this.AutoDLcfg.Text = "Enable auto cfg download";
+            this.AutoDLcfg.Text = "Автозагрузка CFG";
             this.AutoDLcfg.UseVisualStyleBackColor = true;
             // 
             // AutoDLhashlist
@@ -117,7 +117,7 @@
             this.AutoDLhashlist.Name = "AutoDLhashlist";
             this.AutoDLhashlist.Size = new System.Drawing.Size(170, 17);
             this.AutoDLhashlist.TabIndex = 0;
-            this.AutoDLhashlist.Text = "Enable auto hashlist download";
+            this.AutoDLhashlist.Text = "Автозагрузка HashList";
             this.AutoDLhashlist.UseVisualStyleBackColor = true;
             // 
             // dorepcheck
@@ -127,7 +127,7 @@
             this.dorepcheck.Name = "dorepcheck";
             this.dorepcheck.Size = new System.Drawing.Size(148, 17);
             this.dorepcheck.TabIndex = 0;
-            this.dorepcheck.Text = "Enable repetitions checks";
+            this.dorepcheck.Text = "Проверять на повторы";
             this.dorepcheck.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -140,7 +140,7 @@
             this.groupBox1.Size = new System.Drawing.Size(171, 110);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Checks";
+            this.groupBox1.Text = "Проверки";
             // 
             // dorosvercheck
             // 
@@ -149,7 +149,7 @@
             this.dorosvercheck.Name = "dorosvercheck";
             this.dorosvercheck.Size = new System.Drawing.Size(161, 17);
             this.dorosvercheck.TabIndex = 0;
-            this.dorosvercheck.Text = "Enable ROS Version checks";
+            this.dorosvercheck.Text = "Проверять на версии ROS";
             this.dorosvercheck.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -163,7 +163,7 @@
             this.groupBox2.Size = new System.Drawing.Size(181, 110);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Auto Settings";
+            this.groupBox2.Text = "Автоматические настройки";
             // 
             // UseInternalPatcher
             // 
@@ -172,9 +172,9 @@
             this.UseInternalPatcher.Name = "UseInternalPatcher";
             this.UseInternalPatcher.Size = new System.Drawing.Size(137, 17);
             this.UseInternalPatcher.TabIndex = 3;
-            this.UseInternalPatcher.Text = "Use embedded patcher";
-            this.toolTip1.SetToolTip(this.UseInternalPatcher, "Use embedded patcher and patches instead of the external patcher.exe (aka Autopat" +
-        "cher).");
+            this.UseInternalPatcher.Text = "Встроенный патчер";
+            this.toolTip1.SetToolTip(this.UseInternalPatcher, "Использовать встроенный патчер patcher.exe и патчи вместо внешних (aka авто" +
+        "патчер).");
             this.UseInternalPatcher.UseVisualStyleBackColor = true;
             this.UseInternalPatcher.CheckedChanged += new System.EventHandler(this.UseInternalPatcher_CheckedChanged);
             // 
@@ -188,7 +188,7 @@
             this.disabledisclaimerbtn.Name = "disabledisclaimerbtn";
             this.disabledisclaimerbtn.Size = new System.Drawing.Size(183, 23);
             this.disabledisclaimerbtn.TabIndex = 1;
-            this.disabledisclaimerbtn.Text = "Disable Disclaimer";
+            this.disabledisclaimerbtn.Text = "Отключить Disclaimer";
             this.disabledisclaimerbtn.UseVisualStyleBackColor = true;
             this.disabledisclaimerbtn.Click += new System.EventHandler(this.DisabledisclaimerbtnClick);
             // 
@@ -208,7 +208,7 @@
             this.groupBox3.Size = new System.Drawing.Size(359, 155);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Patcher Settings";
+            this.groupBox3.Text = "Настройки патчера";
             // 
             // patchinfoLabel
             // 
@@ -227,7 +227,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Embedded ROS patch:";
+            this.label1.Text = "Встроенный патч ROS:";
             // 
             // patchbutton
             // 
@@ -236,7 +236,7 @@
             this.patchbutton.Size = new System.Drawing.Size(24, 23);
             this.patchbutton.TabIndex = 4;
             this.patchbutton.Text = "...";
-            this.toolTip1.SetToolTip(this.patchbutton, "Select your patch file");
+            this.toolTip1.SetToolTip(this.patchbutton, "Выберите свой файл патча");
             this.patchbutton.UseVisualStyleBackColor = true;
             this.patchbutton.Click += new System.EventHandler(this.patchbutton_Click);
             // 
@@ -256,8 +256,8 @@
             this.customrospatch.Name = "customrospatch";
             this.customrospatch.Size = new System.Drawing.Size(141, 17);
             this.customrospatch.TabIndex = 7;
-            this.customrospatch.Text = "Use custom ROS patch:";
-            this.toolTip1.SetToolTip(this.customrospatch, "Use a custom ROS patch instead of the embedded one.");
+            this.customrospatch.Text = "Использовать собственный ROS патч:";
+            this.toolTip1.SetToolTip(this.customrospatch, "Использовать собственный патч ROS вместо встроенного.");
             this.customrospatch.UseVisualStyleBackColor = true;
             this.customrospatch.CheckedChanged += new System.EventHandler(this.customrospatch_CheckedChanged);
             // 
@@ -268,8 +268,8 @@
             this.rosheaders.Name = "rosheaders";
             this.rosheaders.Size = new System.Drawing.Size(130, 17);
             this.rosheaders.TabIndex = 6;
-            this.rosheaders.Text = "Restore ROS headers";
-            this.toolTip1.SetToolTip(this.rosheaders, "For advanced users only! Must be used with embedded patcher.");
+            this.rosheaders.Text = "Восстановить заголовки ROS";
+            this.toolTip1.SetToolTip(this.rosheaders, "Только для опытных пользователей! Должен использоваться со встроенным патчером.");
             this.rosheaders.UseVisualStyleBackColor = true;
             // 
             // trvkpatches
@@ -279,9 +279,9 @@
             this.trvkpatches.Name = "trvkpatches";
             this.trvkpatches.Size = new System.Drawing.Size(125, 17);
             this.trvkpatches.TabIndex = 5;
-            this.trvkpatches.Text = "Apply TRVK patches";
-            this.toolTip1.SetToolTip(this.trvkpatches, "Not mandatory for a regular noFSM jailbreak.\r\nMandatory for an old school 3.55 FS" +
-        "M downgrade.");
+            this.trvkpatches.Text = "Применить патчи TRVK";
+            this.toolTip1.SetToolTip(this.trvkpatches, "Не обязательно для обычного джейлбрейка noFSM.\r\nОбязательно для перехода на более ран" +
+        "нюю версию 3.55 FSM.");
             this.trvkpatches.UseVisualStyleBackColor = true;
             // 
             // forcepatch
@@ -291,8 +291,8 @@
             this.forcepatch.Name = "forcepatch";
             this.forcepatch.Size = new System.Drawing.Size(130, 17);
             this.forcepatch.TabIndex = 4;
-            this.forcepatch.Text = "Enable force patching";
-            this.toolTip1.SetToolTip(this.forcepatch, "For advanced users only!");
+            this.forcepatch.Text = "Включить принудительное пропатчивание";
+            this.toolTip1.SetToolTip(this.forcepatch, "Только для опытных пользователей!");
             this.forcepatch.UseVisualStyleBackColor = true;
             this.forcepatch.CheckedChanged += new System.EventHandler(this.forcepatch_CheckedChanged);
             // 
@@ -310,7 +310,7 @@
             this.restoredefaultBoutton.Name = "restoredefaultBoutton";
             this.restoredefaultBoutton.Size = new System.Drawing.Size(180, 23);
             this.restoredefaultBoutton.TabIndex = 4;
-            this.restoredefaultBoutton.Text = "Restore default settings";
+            this.restoredefaultBoutton.Text = "Настройки по умолчанию";
             this.restoredefaultBoutton.UseVisualStyleBackColor = true;
             this.restoredefaultBoutton.Click += new System.EventHandler(this.restoredefaultBoutton_Click);
             // 
@@ -331,7 +331,7 @@
             this.MinimizeBox = false;
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Settings";
+            this.Text = "Параметры";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

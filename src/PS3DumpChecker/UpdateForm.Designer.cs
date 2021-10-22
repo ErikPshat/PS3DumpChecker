@@ -48,7 +48,7 @@
             this.cfgbtn.Name = "cfgbtn";
             this.cfgbtn.Size = new System.Drawing.Size(152, 23);
             this.cfgbtn.TabIndex = 0;
-            this.cfgbtn.Text = "Download Latest CFG";
+            this.cfgbtn.Text = "Скачать последний cfg";
             this.cfgbtn.UseVisualStyleBackColor = true;
             this.cfgbtn.Click += new System.EventHandler(this.CfgbtnClick);
             // 
@@ -59,7 +59,7 @@
             this.hashlistbtn.Name = "hashlistbtn";
             this.hashlistbtn.Size = new System.Drawing.Size(176, 23);
             this.hashlistbtn.TabIndex = 0;
-            this.hashlistbtn.Text = "Download Latest Hashlist";
+            this.hashlistbtn.Text = "Скачать последний хэшлист";
             this.hashlistbtn.UseVisualStyleBackColor = true;
             this.hashlistbtn.Click += new System.EventHandler(this.HashlistbtnClick);
             // 
@@ -70,7 +70,7 @@
             this.appbtn.Name = "appbtn";
             this.appbtn.Size = new System.Drawing.Size(334, 23);
             this.appbtn.TabIndex = 1;
-            this.appbtn.Text = "Download Latest PS3 Dump Checker";
+            this.appbtn.Text = "Скачать последнюю версию PS3 Dump Checker";
             this.appbtn.UseVisualStyleBackColor = true;
             this.appbtn.Click += new System.EventHandler(this.AppbtnClick);
             // 
@@ -85,7 +85,7 @@
             this.groupBox1.Size = new System.Drawing.Size(334, 218);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Changelog";
+            this.groupBox1.Text = "Журнал изменений";
             // 
             // changelog
             // 
@@ -135,7 +135,7 @@
             this.MinimizeBox = false;
             this.Name = "UpdateForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "UpdateForm";
+            this.Text = "Поиск обновлений";
             this.Load += new System.EventHandler(this.UpdateFormLoad);
             this.groupBox1.ResumeLayout(false);
             this.statusstrip.ResumeLayout(false);

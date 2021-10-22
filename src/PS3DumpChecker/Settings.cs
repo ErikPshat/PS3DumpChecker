@@ -36,7 +36,7 @@
             }
             catch
             {
-                MessageBox.Show("Error reading embedded ROS patch version!");
+                MessageBox.Show("Ошибка чтения встроенной версии патча ROS!");
             }
         }
 

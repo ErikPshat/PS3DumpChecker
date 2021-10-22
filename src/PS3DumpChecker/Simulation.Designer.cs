@@ -51,7 +51,7 @@
             this.sim0btn.Name = "sim0btn";
             this.sim0btn.Size = new System.Drawing.Size(95, 23);
             this.sim0btn.TabIndex = 0;
-            this.sim0btn.Text = "Simulate";
+            this.sim0btn.Text = "Симулировать";
             this.sim0btn.UseVisualStyleBackColor = true;
             this.sim0btn.Click += new System.EventHandler(this.Sim0BtnClick);
             // 
@@ -65,7 +65,7 @@
             this.groupBox1.Size = new System.Drawing.Size(200, 49);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Simluate Bad Address Line";
+            this.groupBox1.Text = "Имитация неверной адресной строки";
             // 
             // label1
             // 
@@ -100,7 +100,7 @@
             this.groupBox2.Size = new System.Drawing.Size(200, 73);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Simluate Swapped Address Line";
+            this.groupBox2.Text = "Имитация перестановки адресной строки";
             // 
             // label3
             // 
@@ -150,7 +150,7 @@
             this.sim1btn.Name = "sim1btn";
             this.sim1btn.Size = new System.Drawing.Size(95, 48);
             this.sim1btn.TabIndex = 0;
-            this.sim1btn.Text = "Simulate";
+            this.sim1btn.Text = "Симулировать";
             this.sim1btn.UseVisualStyleBackColor = true;
             this.sim1btn.Click += new System.EventHandler(this.Sim1BtnClick);
             // 
@@ -166,7 +166,7 @@
             this.MinimizeBox = false;
             this.Name = "Simulation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Simulation Shit";
+            this.Text = "Симуляторы дерьмо";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addressLine)).EndInit();

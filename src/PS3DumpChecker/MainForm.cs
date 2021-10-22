@@ -119,19 +119,19 @@
             var sw = new Stopwatch();
             var fi = new FileInfo(file);
             if (Common.Types.ContainsKey(fi.Length)) {
-                SetTitle(string.Format("{0} Type: {2} File: {1}", _version, Path.GetFileName(file), Common.Types[fi.Length].Name.Value));
-                Common.SendStatus("Reading image into memory and checking statistics...");
+                SetTitle(string.Format("{0} Тип: {2} Файл: {1}", _version, Path.GetFileName(file), Common.Types[fi.Length].Name.Value));
+                Common.SendStatus("Считывание дампа в память и проверка статистики...");
                 Logger.LogPath = Path.GetDirectoryName(file) + "\\" + Path.GetFileNameWithoutExtension(file) + "_PS3Check.log";
                 Logger.WriteLine2("********************************************");
                 Logger.WriteLine2(_version);
-                Logger.WriteLine2(string.Format("Check started: {0}", DateTime.Now));
+                Logger.WriteLine2(string.Format("Проверка началась: {0}", DateTime.Now));
                 Logger.WriteLine2("********************************************");
                 sw.Start();
-                Logger.WriteLine("Reading image into memory and checking statistics...");
+                Logger.WriteLine("Считывание дампа в память и проверка статистики...");
                 e.Result = Checks.StartCheck(file, ref sw);
             }
             else
-                Common.SendStatus("ERROR: Bad file size! Check aborted...");
+                Common.SendStatus("ОШИБКА: Неверный размер файла! Проверка прервана...");
         }
 
         private void CheckbtnClick(object sender, EventArgs e) {
@@ -177,11 +177,11 @@
                     if (e.Result != null) {
                         var res = (Common.ImgInfo) e.Result;
                         imgstatus.Text = res.Status;
-                        reversed.Text = res.Reversed ? "Yes" : "No";
-                        isprepatchedbox.Text = res.IsPatched ? "Yes" : "No";
-                        idmatchbox.Text = res.SKUModel ?? "No matching SKU model found!";
+                        reversed.Text = res.Reversed ? "Да" : "Нет";
+                        isprepatchedbox.Text = res.IsPatched ? "Да" : "Нет";
+                        idmatchbox.Text = res.SKUModel ?? "Не найдено совпадений SKU модели!";
                         minverbox.Text = res.MinVer ?? Resources.N_A;
-                        statuslabel.Text = res.IsOk ? "OK" : "BAD";
+                        statuslabel.Text = res.IsOk ? "OK" : "ПЛОХОЙ";
                         rosver0box.Text = res.ROS0Version ?? Resources.N_A;
                         rosver1box.Text = res.ROS1Version ?? Resources.N_A;
                         statuslabel.ForeColor = res.IsOk ? Color.Green : Color.Red;
@@ -238,7 +238,7 @@
             if (!Common.PartList.ContainsKey(tmp.Value))
                 return;
             var obj = Common.PartList[tmp.Value];
-            expdatabox.Text = string.Format("Result of the check: {1}{0}{0}", Environment.NewLine, obj.Result);
+            expdatabox.Text = string.Format("Результат проверки: {1}{0}{0}", Environment.NewLine, obj.Result);
             expdatabox.Text += obj.ExpectedString;
             actdatabox.Text = obj.ActualString;
         }
@@ -256,7 +256,7 @@
         }
 
         public void ParseConfig(string file) {
-            Common.SendStatus(string.Format("Parsing {0}", file));
+            Common.SendStatus(string.Format("Анализ {0}", file));
             Common.Types.Clear();
             using (var xml = XmlReader.Create(file)) {
                 var dataCheckKey = 0;
@@ -578,7 +578,7 @@
                     }
                 }
             }
-            Common.SendStatus("Parsing done!");
+            Common.SendStatus("Парсинг завершён!");
             checkbtn.Enabled = true;
         }
 
@@ -700,5 +700,10 @@
         private void forcePatchToolStripMenuItem_Click(object sender, EventArgs e) { Patch(Common.dmpname, Common.swapstate); }
 
         public void forcepatchstate() { forcePatchToolStripMenuItem.Visible = Program.GetRegSetting("forcepatch"); }
+
+        private void advbox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

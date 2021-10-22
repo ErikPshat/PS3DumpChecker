@@ -76,7 +76,7 @@
             this.checkbtn.Name = "checkbtn";
             this.checkbtn.Size = new System.Drawing.Size(450, 25);
             this.checkbtn.TabIndex = 1;
-            this.checkbtn.Text = "Check Image";
+            this.checkbtn.Text = "Загрузить файл дампа";
             this.checkbtn.UseVisualStyleBackColor = true;
             this.checkbtn.Click += new System.EventHandler(this.CheckbtnClick);
             // 
@@ -91,7 +91,7 @@
             this.advbox.Size = new System.Drawing.Size(450, 281);
             this.advbox.TabIndex = 2;
             this.advbox.TabStop = false;
-            this.advbox.Text = "Advanced View";
+            this.advbox.Text = "Расширенный обзор";
             // 
             // label4
             // 
@@ -101,7 +101,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Actual data:";
+            this.label4.Text = "Актуальные данные:";
             // 
             // label3
             // 
@@ -112,7 +112,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Expected Data:";
+            this.label3.Text = "Ожидаемые данные:";
             // 
             // expdatabox
             // 
@@ -161,7 +161,7 @@
             this.imginfo.Size = new System.Drawing.Size(450, 123);
             this.imginfo.TabIndex = 0;
             this.imginfo.TabStop = false;
-            this.imginfo.Text = "Image Information";
+            this.imginfo.Text = "Информация о дампе";
             // 
             // label9
             // 
@@ -170,7 +170,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Pre-Patched:";
+            this.label9.Text = "Пропатчен:";
             // 
             // label8
             // 
@@ -179,7 +179,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "ROS1 Version:";
+            this.label8.Text = "Версия ROS1:";
             // 
             // label7
             // 
@@ -188,7 +188,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "ROS0 Version:";
+            this.label7.Text = "Версия ROS0:";
             // 
             // label6
             // 
@@ -197,7 +197,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Lowest downgradeable to:";
+            this.label6.Text = "Даунгрейд возможен до:";
             // 
             // minverbox
             // 
@@ -261,7 +261,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Byte swapped:";
+            this.label2.Text = "Реверс байт:";
             // 
             // idmatchbox
             // 
@@ -292,7 +292,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Matching SKU:";
+            this.label5.Text = "Модель SKU:";
             // 
             // label1
             // 
@@ -301,7 +301,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Image Status:";
+            this.label1.Text = "Статус дампа:";
             // 
             // worker
             // 
@@ -336,7 +336,7 @@
             // 
             this.loadConfigurationToolStripMenuItem.Name = "loadConfigurationToolStripMenuItem";
             this.loadConfigurationToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
-            this.loadConfigurationToolStripMenuItem.Text = "Load Configuration";
+            this.loadConfigurationToolStripMenuItem.Text = "Загрузить конфиг";
             this.loadConfigurationToolStripMenuItem.Click += new System.EventHandler(this.LoadConfigurationToolStripMenuItemClick);
             // 
             // update
@@ -353,7 +353,7 @@
             // 
             this.loadHashlistToolStripMenuItem.Name = "loadHashlistToolStripMenuItem";
             this.loadHashlistToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.loadHashlistToolStripMenuItem.Text = "Load Hashlist";
+            this.loadHashlistToolStripMenuItem.Text = "Загрузить хэш-лист";
             this.loadHashlistToolStripMenuItem.Click += new System.EventHandler(this.LoadHashlistToolStripMenuItemClick);
             // 
             // forcePatchToolStripMenuItem
@@ -361,7 +361,7 @@
             this.forcePatchToolStripMenuItem.Enabled = false;
             this.forcePatchToolStripMenuItem.Name = "forcePatchToolStripMenuItem";
             this.forcePatchToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.forcePatchToolStripMenuItem.Text = "Force Patch";
+            this.forcePatchToolStripMenuItem.Text = "Форсировать патч";
             this.forcePatchToolStripMenuItem.Visible = false;
             this.forcePatchToolStripMenuItem.Click += new System.EventHandler(this.forcePatchToolStripMenuItem_Click);
             // 
@@ -374,7 +374,7 @@
             this.logstate.Name = "logstate";
             this.logstate.Size = new System.Drawing.Size(100, 17);
             this.logstate.TabIndex = 5;
-            this.logstate.Text = "Enable Logging";
+            this.logstate.Text = "Включить лог";
             this.logstate.UseVisualStyleBackColor = true;
             this.logstate.CheckedChanged += new System.EventHandler(this.logstate_CheckedChanged);
             // 
@@ -386,14 +386,14 @@
             this.statuslabel.Name = "statuslabel";
             this.statuslabel.Size = new System.Drawing.Size(450, 91);
             this.statuslabel.TabIndex = 6;
-            this.statuslabel.Text = "STATUS";
+            this.statuslabel.Text = "СТАТУС";
             this.statuslabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // status
             // 
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(131, 17);
-            this.status.Text = "Waiting for user input...";
+            this.status.Text = "Ожидание ввода дампа от пользователя...";
             // 
             // statusStrip
             // 

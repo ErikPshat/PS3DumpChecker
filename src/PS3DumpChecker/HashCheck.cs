@@ -15,7 +15,7 @@
         public HashCheck(string filename) { LoadHashList(filename); }
 
         private void LoadHashList(string filename) {
-            Common.SendStatus(string.Format("Parsing {0}", filename));
+            Common.SendStatus(string.Format("Анализ {0}", filename));
             _hashlist.Clear();
             Offsets.Clear();
             var type = "";
@@ -37,12 +37,12 @@
                                 };
                                 fsize = xml["size"];
                                 if(fsize == null)
-                                    throw new InvalidOperationException("size doesn't exist");
+                                    throw new InvalidOperationException("размер не существует");
                                 tmp.Size = int.Parse(fsize, NumberStyles.AllowHexSpecifier);
                                 xml.Read();
                                 fsize = xml.Value;
                                 if(fsize == null)
-                                    throw new InvalidOperationException("no offset");
+                                    throw new InvalidOperationException("нет смещения");
                                 tmp.Offset = int.Parse(fsize, NumberStyles.AllowHexSpecifier);
                                 Offsets[size].Value.Add(tmp);
                             }
@@ -54,7 +54,7 @@
                             break;
                         case "hash":
                             if(string.IsNullOrEmpty(type))
-                                throw new InvalidOperationException("No type specified...");
+                                throw new InvalidOperationException("Тип не указан...");
                             tmp = new HashListObject {
                                 Name = xml["name"],
                                 Type = xml["type"],
@@ -69,7 +69,7 @@
                     }
                 }
             }
-            Common.SendStatus("Parsing done!");
+            Common.SendStatus("Анализ завершён!");
         }
 
         public string CheckHash(ref byte[] data, long offset, long size, bool reversed, string type, string name, out string hash) {
