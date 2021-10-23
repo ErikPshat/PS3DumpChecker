@@ -124,7 +124,7 @@
     <value>Патчить дамп?</value>
   </data>
   <data name="ofdfilter" xml:space="preserve">
-    <value>E3 Flasher|*.bin|Flash Dumper|*.hex|multiMAN NOR Dumper|*.NORBIN|multiMAN NAND Dumper|*.NANDBIN|Все файлы|*.*</value>
+    <value>Все форматы дампов|*.bin; *.hex; *.NORBIN; *.NANDBIN|E3 Flasher|*.bin|Flash Dumper|*.hex|multiMAN NOR Dumper|*.NORBIN|multiMAN NAND Dumper|*.NANDBIN|Все файлы|*.*</value>
   </data>
   <data name="AcceptTermsMessage" xml:space="preserve">
     <value>Используя это программное обеспечение, вы понимаете, что автор (Swizzy) никоим образом не несет ответственности за ЛЮБОЙ ущерб, нанесенный вашей консоли...
@@ -158,7 +158,7 @@
     <value>ПРЕДУПРЕЖДЕНИЕ!</value>
   </data>
   <data name="hashlist_filter" xml:space="preserve">
-    <value>Хэш-лист|*.hashlist|Все файлы|*.*</value>
+    <value>Хэшлист|*.hashlist|Все файлы|*.*</value>
   </data>
   <data name="error_noconfig" xml:space="preserve">
     <value>ОШИБКА: конфигурация не загружена!</value>
@@ -229,7 +229,7 @@
     <value>Уупс, онлайн-версия плохая! :'(</value>
   </data>
   <data name="LatestVersionRunningOrNotUpdatedOnline" xml:space="preserve">
-    <value>У вас уже установлена последняя версия, или онлайн-версия не обновлена должным образом...</value>
+    <value>У вас уже установлена последняя версия!</value>
   </data>
   <data name="ErrorWhileCheckingForUpdates" xml:space="preserve">
     <value>При проверке обновлений произошла ошибка! Повторите попытку позже...</value>
@@ -241,7 +241,7 @@
     <value>При загрузке обновления произошла ошибка! Повторите попытку позже...</value>
   </data>
   <data name="AlreadyUsingLatestHashlist" xml:space="preserve">
-    <value>Вы уже используете последний хеш-лист!</value>
+    <value>Вы уже используете последний хэшлист!</value>
   </data>
   <data name="AlreadyUsingLatestCFG" xml:space="preserve">
     <value>Вы уже используете последнюю версию cfg!</value>

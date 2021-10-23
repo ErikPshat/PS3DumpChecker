@@ -181,7 +181,7 @@
                         isprepatchedbox.Text = res.IsPatched ? "Да" : "Нет";
                         idmatchbox.Text = res.SKUModel ?? "Не найдено совпадений SKU модели!";
                         minverbox.Text = res.MinVer ?? Resources.N_A;
-                        statuslabel.Text = res.IsOk ? "OK" : "ПЛОХОЙ";
+                        statuslabel.Text = res.IsOk ? "OK" : "BAD";
                         rosver0box.Text = res.ROS0Version ?? Resources.N_A;
                         rosver1box.Text = res.ROS1Version ?? Resources.N_A;
                         statuslabel.ForeColor = res.IsOk ? Color.Green : Color.Red;

@@ -71,7 +71,7 @@
                 Logger.WriteLine(string.Format("{0,85}", "Бинарная проверка запущена!"));
                 foreach(var key in _checkdata.Bincheck.Value.Keys) {
                     _checkckount++;
-                    Common.SendStatus(string.Format("Анализ дампа... Проверка бинарного кода на наличие: {0}", key));
+                    Common.SendStatus(string.Format("Анализ дампа... Проверка бинарного кода: {0}", key));
                     var bintmp = string.Format("Проверка бинарного кода: {0}", key);
                     Logger.Write(string.Format("{0,-70} Результат: ", bintmp));
                     if(!_checkdata.Bincheck.Value[key].Value.IsMulti) {
@@ -114,7 +114,7 @@
                 Logger.WriteLine(string.Format("{0,85}", "Проверка хэша запущена!"));
                 foreach(var check in Common.Hashes.Offsets[data.Length].Value) {
                     _checkckount++;
-                    Common.SendStatus(string.Format("Анализ дампа... Проверка хэша для: {0}", check.Name));
+                    Common.SendStatus(string.Format("Анализ дампа... Проверка хэша: {0}", check.Name));
                     var hashtmp = string.Format("Проверка хэша: {0}", check.Name);
                     Logger.Write(string.Format("{0,-70} Результат: ", hashtmp));
                     if(!CheckHash(_ret.Reversed, ref data, check))
@@ -142,7 +142,7 @@
                 if (!ret)
                     Common.AddBad(ref _ret);
                 Logger.WriteLine2(!ret ? "НЕУДАЧНО!" : string.Format("OK! ({0})", _ret.ROS0Version));
-                AddItem(new Common.PartsObject { ActualString = _ret.ROS0Version, ExpectedString = "Версия ROS0 в формате: ###.###", Name = "009.03   Версия ROS0", Result = ret });
+                AddItem(new Common.PartsObject { ActualString = _ret.ROS0Version, ExpectedString = "Версия ROS0 в формате: ###.###", Name = "009.03  ROS0 Version", Result = ret });
                 _checkckount++;
                 Common.SendStatus("Анализ дампа... Проверка версии ROS0");
                 Logger.Write(string.Format("{0,-70} Результат: ", "Проверка версии ROS для ROS1 запущена..."));
@@ -150,7 +150,7 @@
                 if (!ret)
                     Common.AddBad(ref _ret);
                 Logger.WriteLine2(!ret ? "НЕУДАЧНО!" : string.Format("OK! ({0})", _ret.ROS1Version));
-                AddItem(new Common.PartsObject { ActualString = _ret.ROS1Version, ExpectedString = "Версия ROS1 в формате: ###.###", Name = "009.06   Версия ROS1", Result = ret });
+                AddItem(new Common.PartsObject { ActualString = _ret.ROS1Version, ExpectedString = "Версия ROS1 в формате: ###.###", Name = "009.06  ROS1 Version", Result = ret });
             }
             else if (Program.GetRegSetting("dorosvercheck", true))
                 Logger.WriteLine(string.Format("{0,-70} (нечего проверять)", "Проверка версии ROS пропущена!"));
