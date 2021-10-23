@@ -2,7 +2,6 @@ Build 501 R2 RUS 2021-10-23:
  - Добавлено: Отсутствующие хэши под ядра ROS.
 Build 501 R1 RUS 2021-10-22:
  - Изменено: Программа переведена на русский язык.
- - Добавлено: Пока ничего не добавлено.
 Build 501 2021-06-04:
  - Changed: The embedded 4.87 patch replaced by a 4.88 patch build from Evilnat's 4.88 custom firmware CoreOS.
  - Added: OFW and Patched 4.88 ROS hashes.
@@ -178,4 +177,4 @@ Build 252 - 2013-07-29:
  - Fixed a bug caused by computers completing checks faster then it could process the checks list
 Build 250 - 2013-07-26:
  - Added Auto Launching Rogero's Patcher if present and dump verified...
- - Removed statistics check from the default cfg (they're rarely ever passing anyways unless 3.55 patched first)
+ - Removed statistics check from the default cfg (they're rarely ever passing anyways unless 3.55 patched first)ed first)t)
