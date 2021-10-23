@@ -87,7 +87,7 @@ namespace PS3DumpChecker.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ты умеешь читать?.
+        ///   Ищет локализованную строку, похожую на Вы умеете читать?.
         /// </summary>
         internal static string AcceptTermsTitle {
             get {
@@ -367,7 +367,7 @@ namespace PS3DumpChecker.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на E3 Flasher|*.bin|Flash Dumper|*.hex|Все файлы|*.*.
+        ///   Ищет локализованную строку, похожую на E3 Flasher|*.bin|Flash Dumper|*.hex|multiMAN NOR Dump|*.NORBIN|multiMAN NAND Dump|*.NANDBIN|Все файлы|*.*.
         /// </summary>
         internal static string ofdfilter {
             get {

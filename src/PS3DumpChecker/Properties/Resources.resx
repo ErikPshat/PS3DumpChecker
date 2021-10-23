@@ -124,7 +124,7 @@
     <value>Патчить дамп?</value>
   </data>
   <data name="ofdfilter" xml:space="preserve">
-    <value>E3 Flasher|*.bin|Flash Dumper|*.hex|Все файлы|*.*</value>
+    <value>E3 Flasher|*.bin|Flash Dumper|*.hex|multiMAN NOR Dumper|*.NORBIN|multiMAN NAND Dumper|*.NANDBIN|Все файлы|*.*</value>
   </data>
   <data name="AcceptTermsMessage" xml:space="preserve">
     <value>Используя это программное обеспечение, вы понимаете, что автор (Swizzy) никоим образом не несет ответственности за ЛЮБОЙ ущерб, нанесенный вашей консоли...

@@ -808,7 +808,7 @@
                 var islastok = true;
                 var testlist = new Dictionary<string, string>();
                 var laststring = "";
-                bigbuilder.AppendLine(string.Format("Проверка наименования: {0}", checkdata.DataMatchList.Value[key].Value.Name));
+                bigbuilder.AppendLine(string.Format("Проверка данных ресурса: {0}", checkdata.DataMatchList.Value[key].Value.Name));
                 foreach(var testdata in checkdata.DataMatchList.Value[key].Value.Data) {
                     if(testdata.SequenceRepetitions <= 0)
                         laststring = DoCheckDataMatch(ref data, testdata.Offset, ref smallbuilder, ref testlist, ref islastok, testdata);
