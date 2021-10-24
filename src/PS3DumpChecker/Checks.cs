@@ -272,7 +272,7 @@
                 }
                 AddItem(new Common.PartsObject
                 {
-                    Name = "SKUIdentity Data",
+                    Name = "Данные идентификации SKU",
                     ActualString = datamsg.Trim(),
                     ExpectedString = "",
                     Result = (skuEntryList.Count == skuCheckDataList.Count),
@@ -777,7 +777,7 @@
                 bigbuilder.Append(s); // Add the saved data back
             }
             AddItem(new Common.PartsObject {
-                Name = "Repetitions Check",
+                Name = "Проверка на повторы",
                 ActualString = bigbuilder.ToString(),
                 ExpectedString = "Не должно быть повторений!",
                 Result = ret
@@ -838,7 +838,7 @@
             if(ret)
                 bigbuilder.Append("Все проверки на совпадения в порядке!");
             AddItem(new Common.PartsObject {
-                Name = "Data Match Check",
+                Name = "Проверка на совпадение данных",
                 ActualString = bigbuilder.ToString(),
                 ExpectedString = "Не должно быть никаких несовпадений!",
                 Result = ret

@@ -120,14 +120,14 @@
             var fi = new FileInfo(file);
             if (Common.Types.ContainsKey(fi.Length)) {
                 SetTitle(string.Format("{0} Тип: {2} Файл: {1}", _version, Path.GetFileName(file), Common.Types[fi.Length].Name.Value));
-                Common.SendStatus("Считывание дампа в память и проверка статистики...");
+                Common.SendStatus("Считывание дампа в память и статистика проверки...");
                 Logger.LogPath = Path.GetDirectoryName(file) + "\\" + Path.GetFileNameWithoutExtension(file) + "_PS3Check.log";
                 Logger.WriteLine2("********************************************");
                 Logger.WriteLine2(_version);
                 Logger.WriteLine2(string.Format("Проверка началась: {0}", DateTime.Now));
                 Logger.WriteLine2("********************************************");
                 sw.Start();
-                Logger.WriteLine("Считывание дампа в память и проверка статистики...");
+                Logger.WriteLine("Считывание дампа в память и статистика проверки...");
                 e.Result = Checks.StartCheck(file, ref sw);
             }
             else

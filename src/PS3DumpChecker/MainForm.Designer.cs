@@ -353,7 +353,7 @@
             // 
             this.loadHashlistToolStripMenuItem.Name = "loadHashlistToolStripMenuItem";
             this.loadHashlistToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.loadHashlistToolStripMenuItem.Text = "Загрузить хэш-лист";
+            this.loadHashlistToolStripMenuItem.Text = "Загрузить хэшлист";
             this.loadHashlistToolStripMenuItem.Click += new System.EventHandler(this.LoadHashlistToolStripMenuItemClick);
             // 
             // forcePatchToolStripMenuItem
