@@ -10,6 +10,7 @@
 	</offsets>
 	<type name="ROS">
 	<!-- Patched -->
+		<hash name="4.90 CEX Patched (Evilnat based)" size="6FFFE0" patched="true">8CF9701297129151E22EDA39C1D2670F</hash>
 		<hash name="4.89 CEX Patched (Evilnat based)" size="6FFFE0" patched="true">B9FEB4432ADB086D890472AB29B663A9</hash>
 		<hash name="4.88 CEX Patched (Evilnat based)" size="6FFFE0" patched="true">EA9F81A031A7B6701560B3501712DF1A</hash>
 		<hash name="4.87 CEX Patched (Evilnat based)" size="6FFFE0" patched="true">1EFB54B005B09A10E436F9C76E51D870</hash>
@@ -37,6 +38,7 @@
 		<hash name="4.30 CEX Patched (Three Musketeers)" size="6FFFE0" patched="true">6CE56CC2BD4238E831E9A64E4547A81B</hash>
 		<hash name="3.55 CEX Patched" size="6FFFE0" patched="true">F162E0D72EBA0F46B7FB36E6AAB63958</hash>
 	<!-- OFW -->
+		<hash name="4.90 CEX" size="6FFFE0">AB9C9700445CCD1AB9215AF8C28EE0F9</hash>
 		<hash name="4.89 CEX" size="6FFFE0">2C6791BAC0978B921CACAEBB1E827743</hash>
 		<hash name="4.88 CEX" size="6FFFE0">36A0D80FB18E9D6FD7635217D59FA726</hash>
 		<hash name="4.87 CEX" size="6FFFE0">8F4A63DC20F1EB54168478C814DF80C1</hash>

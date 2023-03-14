@@ -700,10 +700,5 @@
         private void forcePatchToolStripMenuItem_Click(object sender, EventArgs e) { Patch(Common.dmpname, Common.swapstate); }
 
         public void forcepatchstate() { forcePatchToolStripMenuItem.Visible = Program.GetRegSetting("forcepatch"); }
-
-        private void advbox_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }
